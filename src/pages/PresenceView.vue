@@ -1,21 +1,13 @@
 <template>
   <section class="md:flex md:flex-col">
     <div class="md:flex md:flex-1">
-      <div
-        class="md:flex md:flex-col bg-[#F1F1F1] md:w-96 md:h-screen p-4 gap-4"
-      >
+      <div class="md:flex md:flex-col bg-[#F1F1F1] md:w-96 md:h-screen p-4 gap-4">
         <div class="flex flex-col items-center pb-6">
-          <img
-            class="w-24 h-24 mb-3 rounded-full shadow-lg"
-            src="https://static.vecteezy.com/system/resources/previews/002/002/403/original/man-with-beard-avatar-character-isolated-icon-free-vector.jpg"
-            alt="Bonnie image"
-          />
+          <img class="w-24 h-24 mb-3 rounded-full shadow-lg" src="src/assets/icon/avatar.png" alt="Bonnie image" />
           <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-blacke">
             {{ profile.fullname }}
           </h5>
-          <span class="text-sm text-gray-500 dark:text-gray-400"
-            >Atlet PBJI</span
-          >
+          <span class="text-sm text-gray-500 dark:text-gray-400">Atlet PBJI</span>
         </div>
 
         <div class="">
@@ -27,10 +19,7 @@
           </div>
           <div class="mt-3 flex items-center gap-3">
             <img class="w-7 h-7" src="../assets/icon/logout.png" alt="" />
-            <button
-              class="text-sm text-based text-red-600"
-              @click="confimLogoutDialog"
-            >
+            <button class="text-sm text-based text-red-600" @click="confimLogoutDialog">
               Logout
             </button>
           </div>
@@ -45,9 +34,7 @@
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo
               exercitationem ea
             </p>
-            <div
-              class="rounded-md bg-white text-black mt-4 pl-4 pt-4 pb-4 pr-4"
-            >
+            <div class="rounded-md bg-white text-black mt-4 pl-4 pt-4 pb-4 pr-4">
               <h3 class="text-bold text-slate-700 mb-2">Jumlah presensi</h3>
               <hr />
               <h1 class="text-7xl font-bold text-yellow-400">

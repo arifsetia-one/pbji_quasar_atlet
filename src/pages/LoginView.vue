@@ -16,7 +16,7 @@
               <input v-model="inputData.password" type="password" id="password" placeholder="Password"
                 class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-red-600" />
             </div>
-            <a href="http://192.168.137.79:9001/" id="loginAdmin"
+            <a href="http://localhost:9001/#/auth/login" id="loginAdmin"
               class="flex justify-center text-sm mt-4 font-medium text-red-600 hover:underline">Login sebagai admin</a>
             <div class="flex items-baseline justify-between">
               <button type="submit" class="w-full px-6 py-2 mt-4 text-white bg-red-600 rounded-lg hover:bg-red-900"

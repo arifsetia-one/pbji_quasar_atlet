@@ -7,7 +7,6 @@
     </div>
     <div class="flex items-center gap-8"></div>
   </section>
-  <!-- mobile navbar -->
   <section id="mobileNavbar" class="block md:hidden shadow-md">
     <nav class="bg-white border-gray-200">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">

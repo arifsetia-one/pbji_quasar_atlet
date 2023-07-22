@@ -42,7 +42,7 @@ export default route(function (/* { store, ssrContext } */) {
       // sets document title
       title: to.meta.title,
       // optional; sets final title as "Index Page - My Website", useful for multiple level meta
-      titleTemplate: (title) => `${title} - RealMasjid Backoffice`,
+      titleTemplate: (title) => `${title} - pbji`,
     });
 
     // run the middleware(s)
