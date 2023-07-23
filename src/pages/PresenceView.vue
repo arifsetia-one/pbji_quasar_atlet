@@ -18,11 +18,11 @@
           >
         </div>
 
-        <div class="">
+        <div>
           <div class="flex items-center gap-3">
-            <img class="w-7 h-7" src="../assets/icon/home.png" alt="" />
+            <img class="w-7 h-7" src="../assets/icon/home.png" alt="avatars" />
             <div class="text-sm text-based">
-              Kel.Maguwoharjo, Kec.Depok, Kab.Sleman, Prov. DI Yogyakarta
+              {{ full_addresses }}
             </div>
           </div>
           <div class="mt-3 flex items-center gap-3">
@@ -86,13 +86,14 @@ const profile = ref([]);
 const uname = ref([]);
 const presence = ref([]);
 const id_number = ref([]);
+const full_addresses = ref([]);
 
 const getData = async () => {
   const dataProfile = await getProfile(localStorage.getItem("auth_token"));
   const dataPresence = await getPresenceCount(
     localStorage.getItem("auth_token")
   );
-  console.log(dataProfile.data);
+  console.log(dataProfile.data.info.full_addresses);
   console.log(dataProfile.data.id_number);
   console.log(dataProfile.data.personal.fullname);
   console.log(dataPresence);
@@ -101,6 +102,7 @@ const getData = async () => {
   uname.value = dataProfile.data;
   presence.value = dataPresence.data;
   id_number.value = dataProfile.data.id_number;
+  full_addresses.value = dataProfile.data.info.full_addresses;
 };
 
 // const getPresenceCount = async () => {
